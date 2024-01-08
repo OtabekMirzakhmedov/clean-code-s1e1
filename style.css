@@ -39,7 +39,8 @@ ul {
     padding: 0px;
 }
 
-input,button{
+input,
+button{
     outline:none;
 }
 
@@ -91,11 +92,6 @@ input[type="text"] {
 }
 input[type="text"]:focus {
     color: #333;
-}
-
-
-input#new-task {
-    width: 318px;
 }
 
 /* Task list */
