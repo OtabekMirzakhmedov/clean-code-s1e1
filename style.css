@@ -42,7 +42,9 @@ ul {
 input,button{
     outline:none;
 }
-button {
+
+/* Buttons */
+.btn {
     background: none;
     border: 0px;
     color: #888;
@@ -51,9 +53,19 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+.btn:hover {
     color: #3a3A3a;
 }
+
+.btn-delete img{
+    height: 2em;
+    transform: rotateZ(45deg);
+    transition: transform 200ms ease-in;
+}
+.btn-delete img:hover {
+    transform: rotateZ(0);
+}
+
 /* Heading */
 .todo__section-title {
     display: block;
@@ -112,14 +124,7 @@ li > label {
 li > input[type="text"] {
     width: 226px;
 }
-button.delete img {
-    height: 2em;
-    transform: rotateZ(45deg);
-    transition: transform 200ms ease-in;
-}
-button.delete img:hover {
-    transform: rotateZ(0);
-}
+
 
 /* Completed */
 ul#completed-tasks label {
